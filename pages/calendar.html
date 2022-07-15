@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="./../js/jquery.scrollme.js"></script>
+        <script src="https://use.fontawesome.com/fc05a3b2ae.js"></script>
+        <link rel="icon" href="./../img/icon.png">
+        <link rel="stylesheet" href="./../css/main.css">
+        <link rel="stylesheet" href="./../css/mobile-laptop.css">
+        <link rel="stylesheet" href="./../css/mobile-phone.css">
+        <title>Календарь хоккейных событий</title>
+    </head>
+    <body>
+        <header class="header col-12" id="main">
+            <div class="header_logo">
+                <a href="https://fhr.ru/" target="_blank">
+                    <img
+                        src="./../img/file.jpg"
+                        alt="..."
+                        width="120px"
+                        class="rounded border shadow logo_img"
+                    >
+                </a>
+                <p class="logo_text">БГССО "Федерация хоккея"</p>
+            </div>
+            <div class="main_menu">
+                <ul class="menu">
+                    <a href="./../index.html">
+                        <li class="menu_item">Главная</li>
+                    </a>
+                    <a href="./../index.html#about">
+                        <li class="menu_item">О федерации</li>
+                    </a>
+                    <a href="./news.html">
+                        <li class="menu_item">Новости</li>
+                    </a>
+                    <a href="#!">
+                        <li class="menu_item">Календарь</li>
+                    </a>
+                    <a href="./results.html">
+                        <li class="menu_item">Результаты игр</li>
+                    </a>
+                    <a href="#contacts">
+                        <li class="menu_item">Контакты</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="burger_layer">
+                <div class="burger">
+                    <span class="burger_span top"></span>
+                    <span class="burger_span middle"></span>
+                    <span class="burger_span bottom"></span>
+                </div>
+            </div>
+        </header>
+        <main class="calendar_main">
+            <div class="mobile_menu_page translated">
+                <ul class="mobile_menu">
+                    <a href="./../index.html">
+                        <li class="mobile_menu_item">Главная</li>
+                    </a>
+                    <a href="./../index.html#about">
+                        <li class="mobile_menu_item">О федерации</li>
+                    </a>
+                    <a href="./news.html">
+                        <li class="mobile_menu_item">Новости</li>
+                    </a>
+                    <a href="./calendar.html">
+                        <li class="mobile_menu_item">Календарь</li>
+                    </a>
+                    <a href="./results.html">
+                        <li class="mobile_menu_item">Результаты игр</li>
+                    </a>
+                    <a href="#contacts">
+                        <li class="mobile_menu_item">Контакты</li>
+                    </a>
+                </ul>
+            </div>
+            <h2 class="block_title calendar_title">КАЛЕНДАРЬ</h2>
+            <p class="calendar_subtitle">
+                кубка города Благовещенск по хоккею  (сезон 2021-2022 гг.)
+                <br>
+                Ледовая арена "Спартак"
+            </p>
+            <div class="table_holder rounded shadow">
+                <div class="team_border">
+                    <div class="team_block">
+                        <div class="team_block_a">
+                            <h4 class="list_title">Группа А</h4>
+                            <ul class="team_list">
+                                <li class="team_item">Благовещенск</li>
+                                <li class="team_item">ДВОКУ</li>
+                                <li class="team_item">Динамо</li>
+                                <li class="team_item">Авторитет</li>
+                                <li class="team_item">Барс</li>
+                                <li class="team_item">Форвард 17</li>
+                            </ul>
+                        </div>
+                        <div class="team_block_b">
+                            <h4 class="list_title">Группа В</h4>
+                            <ul class="team_list">
+                                <li class="team_item">Ирбис</li>
+                                <li class="team_item">Белогорск</li>
+                                <li class="team_item">Восток</li>
+                                <li class="team_item">Свободный</li>
+                                <li class="team_item">Факел</li>
+                                <li class="team_item">Форвард 15</li>
+                            </ul>
+                        </div>
+                        <div class="team_block_c">
+                            <h4 class="list_title">Группа С</h4>
+                            <ul class="team_list">
+                                <li class="team_item">АНК</li>
+                                <li class="team_item">Метеор</li>
+                                <li class="team_item">Темп 40+</li>
+                                <li class="team_item">Мотор</li>
+                                <li class="team_item">Сибур</li>
+                                <li class="team_item">Овертайм</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover table-light text-center table-bordered table-dark">
+                    <thead class="bg-warning">
+                        <tr>
+                            <th class="table_header">Дата игры</th>
+                            <th class="table_header">Время игры</th>
+                            <th class="table_header">Команды</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="bg-warning row_date">
+                                <span>9 октября, суббота</span>
+                            </td>
+                            <td>20.00</td>
+                            <td>Сибур - Темп 40+</td>
+                        </tr>
+                        <tr>
+                            <td>21.30</td>
+                            <td>Белогорск - Восток</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="bg-warning row_date">10 октября, воскресенье</td>
+                            <td>18.00</td>
+                            <td>Благовещенск - Форвард 17</td>
+                        </tr>
+                        <tr>
+                            <td>19.30</td>
+                            <td>Факел - Ирбис</td>
+                        </tr>
+                        <tr>
+                            <td>21.00</td>
+                            <td>Динамо - Барс</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bg-warning row_date">16 октября, суббота</td>
+                            <td>20.00</td>
+                            <td>Белогорск - Свободный</td>
+                        </tr>
+                        <tr>
+                            <td>21.30</td>
+                            <td>Восток - Факел</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="bg-warning row_date">17 октября, воскресенье</td>
+                            <td>18.00</td>
+                            <td>АНК - Овертайм</td>
+                        </tr>
+                        <tr>
+                            <td>19.30</td>
+                            <td>ДВОКУ - Барс</td>
+                        </tr>
+                        <tr>
+                            <td>21.00</td>
+                            <td>Мотор - Метеор</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bg-warning row_date">23 октября, суббота</td>
+                            <td>20.00</td>
+                            <td>АНК - Сибур</td>
+                        </tr>
+                        <tr>
+                            <td>21.30</td>
+                            <td>Темп 40+ - Метеор</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="bg-warning row_date">24 октября, воскресенье</td>
+                            <td>18.00</td>
+                            <td>Белогорск - Факел</td>
+                        </tr>
+                        <tr>
+                            <td>19.30</td>
+                            <td>Мотор - Овертайм</td>
+                        </tr>
+                        <tr>
+                            <td>21.00</td>
+                            <td>Динамо - Благовещенск</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="bg-warning row_date">31 октября, воскресенье</td>
+                            <td>16.30</td>
+                            <td>Форвард 15 - Белогорск</td>
+                        </tr>
+                        <tr>
+                            <td>18.00</td>
+                            <td>Факел - Свободный</td>
+                        </tr>
+                        <tr>
+                            <td>19.30</td>
+                            <td>Восток - Ирбис</td>
+                        </tr>
+                        <tr>
+                            <td>21.00</td>
+                            <td>Авторитет - ДВОКУ</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bg-warning row_date">6 ноября, суббота</td>
+                            <td>18.45</td>
+                            <td>Ирбис - Белогорск</td>
+                        </tr>
+                        <tr>
+                            <td>20.15</td>
+                            <td>Темп 40+ - Мотор</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="bg-warning row_date">7 ноября, воскресенье</td>
+                            <td>18.00</td>
+                            <td>Сибур - Овертайм</td>
+                        </tr>
+                        <tr>
+                            <td>19.30</td>
+                            <td>Барс - Авторитет</td>
+                        </tr>
+                        <tr>
+                            <td>21.00</td>
+                            <td>ДВОКУ - Динамо</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="bg-warning row_date">13 ноября, суббота</td>
+                            <td>20.00</td>
+                            <td>Восток - Свободный</td>
+                        </tr>
+                        <tr>
+                            <td>21.30</td>
+                            <td>Ирбис - Белогорск</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="bg-warning row_date">14 ноября, воскресенье</td>
+                            <td>18.00</td>
+                            <td>Сибур - Метеор</td>
+                        </tr>
+                        <tr>
+                            <td>19.30</td>
+                            <td>Форвард 17 - Динамо</td>
+                        </tr>
+                        <tr>
+                            <td>21.00</td>
+                            <td>АНК - Мотор</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="mt-5 mb-4">
+                    <a href="./../img/Calendar.jpeg">Просмотреть документ можно здесь...</a>
+                </p>
+            </div>
+        </main>
+        <footer class="footer ">
+            <div class="footer_menu footer_item">
+                <ul class="footer_menu_list">
+                    <a href="./../index.html">
+                        <li class="footer_menu_item">Главная</li>
+                    </a>
+                    <a href="./../index.html#about">
+                        <li class="footer_menu_item">О федерации</li>
+                    </a>
+                    <a href="./news.html">
+                        <li class="footer_menu_item">Новости</li>
+                    </a>
+                    <a href="#!">
+                        <li class="footer_menu_item">Календарь</li>
+                    </a>
+                    <a href="./results.html">
+                        <li class="footer_menu_item">Результаты игр</li>
+                    </a>
+                    <a href="#!">
+                        <li class="footer_menu_item">Контакты</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="contacts footer_item" id="contacts">
+                <h5>Контакты:</h5>
+                <p>Телефон: 8-914-550-06-06</p>
+                <p>
+                    <a href="mailto:alexxey.shevelev@gmail.com">e-mail: alexxey.shevelev@gmail.com</a>
+                </p>
+                <p>
+                    <span class="fa fa-whatsapp"> 8-914-550-06-06</span>
+                </p>
+                <p>
+                    <span class="fa fa-telegram"> 8-914-550-06-06</span>
+                </p>
+            </div>
+            <div class="developer_info footer_item">
+                <p>
+                    Разработка:
+                    <br>
+                    Михаил Шевелев
+                    <br>
+                    Все права защищены&reg;
+                    <br>
+                    8-914-149-24-30
+                    <br>
+                    mix.shevelev@yandex.ru
+                </p>
+            </div>
+        </footer>
+        <script src="./../js/main.js"></script
+    </body>
+</html>

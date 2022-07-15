@@ -1,0 +1,167 @@
+@media screen and (max-width: 425px) {
+	.main_menu {
+		display: none !important;
+	}
+	.burger_layer {
+		display: flex;
+	}
+	.header {
+		padding-left: 30px;
+		justify-content: space-between;
+		height: 100px;
+	}
+	.logo_img {
+		width: 70px !important;
+	}
+	.logo_text {
+		display: none;
+	}
+	.arrow {
+		display: none;
+	}
+	.title_block {
+		padding-top: 100px;
+		padding-bottom: 150px;
+		height: 100vh;
+	}
+	
+	.btn_block {
+		flex-direction: column;
+		padding: 0;
+	}
+	.header_button {
+		margin: auto;
+	}
+	.header_button:first-child {
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.about_federation_img {
+		height: auto;
+	}
+	.about_federation_text {
+		font-size: 18px;
+		line-height: normal;
+	}
+	.left_bar_item {
+		flex-direction: column;
+	}
+	.left_bar_item img {
+		width: 100%;
+	}
+	.item_text {
+		padding: 0;
+	}
+	.federation_info_text_block {
+		width: 100%;
+	}
+	.federation_info {
+		padding-bottom: 50px;
+	}
+	.info_text_title {
+		color: #fff;
+	}
+	.info_title {
+		display: none;
+	}
+	.federation_info_text_block {
+		text-shadow: 0 2px 3px red;
+	}
+	.federation_info_text_block span {
+		color: #fff;
+	}
+	.galary_link {
+		font-size: 14px;
+	}
+	.galary_img_holder {
+		grid-template-columns: 1fr;
+	}
+	.footer {
+		flex-direction: column;
+		padding-bottom: 0;
+	}
+	.footer_item {
+		width: 100%;
+		text-align: center;
+	}
+	.footer_menu_list {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer_menu_item {
+		width: 100%;
+		display: block;
+	}
+	.contacts::after {
+		content: "";
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		left: 0;
+		background-color: #fff;
+	}
+	.developer_info {
+		margin-top: 15px;
+	}
+
+	/* newsPage */
+	.news_item {
+		flex-direction: column;
+		padding: 10px;
+	}
+	.news_body {
+		width: 100%;
+	}
+	.team_block {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.team_block_a {
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		text-align: center;
+	}
+	.team_block_b {
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		text-align: center;
+	}
+	.team_block_c {
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 375px) {
+	.main_title {
+		font-size: 25px;
+		margin-bottom: 150px;
+	}
+	.block_title {
+		font-size: 20px;
+	}
+	.about_federation {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.about_federation_text {
+		font-size: 16px;
+	}
+	.item_text {
+		line-height: 20px;
+		font-size: 14px;
+		margin-top: 10px;
+	}
+
+	/* newsPage */
+	.news_block {
+		padding: 10px;
+	}
+	/* calendarPage */
+	
+}

@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import "./animation.css";
+@import "./pages.css";
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto Condensed", sans-serif;
+}
+.none {
+	display: none !important;
+}
+.translated {
+	transform: translateX(-2000px);
+}
+
+
+/* mobile menu */
+.burger_layer {
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 30px;
+	display: none;
+}
+.burger {
+	width: 35px;
+	height: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 50;
+	cursor: pointer;
+}
+.burger_span {
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+}
+
+
+.mobile_menu_page {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-color: #020202ca;
+	left: 0;
+	top: 0;
+	padding-bottom: 100px;
+	transition: all 1.5s;
+}
+.mobile_menu {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	list-style-type: none;
+}
+
+.mobile_menu a {
+	color: #fff;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.mobile_menu_item:hover {
+	color: #9a1515;
+}
+.mobile_menu a:hover {
+	text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+	width: 100%;
+	height: 150px;
+	background-color: #0a0c10;
+	padding-left: 100px;
+	color: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.header_logo {
+	display: flex;
+	align-items: center;
+}
+.logo_img {
+	margin-right: 20px;
+	width: 120px;
+}
+.logo_text {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-size: 20px;
+}
+.main_menu {
+	width: 69%;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	margin-left: 215px;
+}
+.menu_item {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.menu a {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s;
+	text-shadow: 0 2px 5px #fff;
+}
+.menu a:hover {
+	text-decoration: none;
+	color: brown;
+}
+.header * {
+	animation: opacity 1.5s;
+}
+
+/* верхний блок */
+
+.title_block {
+	width: 100%;
+	height: auto;
+	padding-top: 152px;
+	padding-bottom: 118px;
+	background: url("./../img/red_back.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.title_block * {
+	animation: opacity 1.5s;
+}
+.main_title {
+	max-width: 1131px;
+	width: 100%;
+	height: 363px;
+	text-align: center;
+	margin-right: 80px;
+	margin-left: auto;
+	font-size: 70px;
+	letter-spacing: 0.06em;
+	color: #fff;
+	animation: translateRight 1.5s !important;
+}
+.header_button {
+	max-width: 393px;
+	width: 100%;
+	height: 70px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	background-color: #580808;
+	border: none;
+	color: #fff;
+	transition: all 0.5s;
+	animation: translateBottom 1.5s !important;
+}
+.header_button:hover {
+	background-color: #9a1515;
+	color: #fff;
+	text-decoration: none;
+	box-shadow: 0 2px 5px #000;
+	text-shadow: 0 2px 3px #000;
+}
+.header_button:first-child {
+	margin-right: 10px;
+}
+.btn_block {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 254px;
+	margin-left: auto;
+}
+.arrow {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #580808;
+	margin: auto;
+	margin-top: 150px;
+	font-size: 24px;
+	transition: all 0.5s;
+}
+.arrow:hover {
+	background-color: #9a1515;
+}
+.arrow_link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.arrow a:hover {
+	text-decoration: none;
+}
+.main_title {
+	animation: translateRigth 1.5s;
+}
+
+/* о федерации */
+
+.about_federation {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0e0a0b;
+	padding: 150px 88px 150px 108px;
+}
+
+.about_federation_text_block {
+	align-self: flex-start;
+	color: #fff;
+}
+.block_title {
+	font-weight: 700;
+	font-size: 40px;
+	max-width: 904px;
+	width: 100%;
+	text-align: center;
+	margin-right: 67px;
+	text-transform: uppercase;
+}
+.about_title {
+	margin-left: 0 !important;
+}
+.about_federation_text {
+	max-width: 904px;
+	width: 100%;
+	margin-right: 67px;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: justify;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 115px;
+}
+
+.about_federation_img {
+	width: 753px;
+	height: 664px;
+}
+
+/* задачи федерации */
+
+.targets_tasks_block {
+	width: 100%;
+	height: auto;
+	background-color: #420707;
+	padding-top: 71px;
+	padding-bottom: 50px;
+	padding-left: 108px;
+	padding-right: 88px;
+}
+
+.block_title {
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 71px;
+}
+.card_holder {
+	width: 100%;
+	display: flex;
+}
+.card_holder_left_bar {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.last_left_block {
+	margin: 0 !important;
+}
+.left_bar_item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: #fff;
+	background-color: #000;
+	padding: 20px;
+	margin-bottom: 15px;
+	transition: all 0.5s;
+}
+.left_bar_item:hover {
+	box-shadow: 2px 3px 8px #000;
+	transform: translateX(-5px);
+}
+.item_text {
+	font-size: 22px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: justify;
+	padding-left: 20px;
+}
+.card_holder_right_bar {
+	width: 50%;
+	padding: 25px;
+	background-color: #000;
+	margin-left: 15px;
+	padding-bottom: 0;
+	transition: all 0.5s;
+}
+.card_holder_right_bar:hover {
+	box-shadow: 2px 3px 8px #000;
+	transform: translateX(5px);
+}
+.card_holder_right_bar img {
+	width: 100%;
+}
+.rigth_item {
+	width: 100%;
+	background-color: #000;
+	padding: 20px;
+}
+.rigth_item_text {
+	font-size: 24px;
+	line-height: 32px;
+	margin-top: 32px;
+	color: #fff;
+	padding-left: 0;
+}
+/* federation_info */
+
+.federation_info {
+	width: 100%;
+	height: 100vh;
+	padding-top: 42px;
+	padding-bottom: 176px;
+	background: url("./../img/about_black.jpg") no-repeat;
+	background-size: cover;
+}
+
+.federation_info_text_block {
+	width: 802px;
+	margin-right: 88px;
+	margin-left: auto;
+}
+.info_text_title {
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	text-align: center;
+	color: maroon;
+}
+.info_text {
+	font-size: 32px;
+	text-align: justify;
+	text-transform: uppercase;
+	color: #fff;
+}
+.info_text span {
+	color: maroon;
+	font-weight: 700;
+	font-size: 34px !important;
+}
+.e_mail {
+	text-transform: none !important;
+	color: #fff !important;
+}
+
+/* galary */
+
+.galary {
+	width: 100%;
+	height: auto;
+	background-color: #000;
+	padding: 100px 150px 100px 150px;
+}
+.galary_item {
+	width: 500px;
+	margin-bottom: 50px;
+}
+.galary_img_holder {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	position: relative;
+}
+.galary_img_holder img {
+	cursor: pointer;
+	width: 500px;
+	height: 100%;
+	transition: all 0.5s;
+}
+.galary_img_holder img:hover {
+	transform: scale(2);
+}
+.galary_link {
+	font-size: 22px;
+	transition: all 0.5s;
+}
+.galary_link a {
+	color: #fff;
+	text-shadow: 0 2px 2px red;
+}
+
+/* footer */
+
+.footer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 36px 100px 50px 150px;
+	background-color: #1e2020ff;
+}
+
+.footer_menu_list {
+	list-style-type: none;
+	line-height: 30px;
+}
+.footer_menu_item {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+.footer_menu_list a {
+	display: block;
+	max-width: 120px;
+}
+.footer_menu_list a:hover {
+	text-decoration: none !important;
+}
+.footer_menu_item:hover {
+	color: maroon;
+}
+.contacts {
+	color: #fff;
+	text-align: left;
+	padding-left: 50px;
+}
+
+.developer_info {
+	width: 298px;
+	height: 144px;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #fff;
+}
+.footer_item {
+	width: 33.333%;
+}
